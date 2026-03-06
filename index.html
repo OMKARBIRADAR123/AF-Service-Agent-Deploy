@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align:center;
+            margin-top:150px;
+        }
+
+        .logo{
+            font-size:60px;
+            font-weight:bold;
+            color:#4285F4;
+        }
+
+        .logo span:nth-child(2){color:#EA4335;}
+        .logo span:nth-child(3){color:#FBBC05;}
+        .logo span:nth-child(4){color:#4285F4;}
+        .logo span:nth-child(5){color:#34A853;}
+        .logo span:nth-child(6){color:#EA4335;}
+
+        input{
+            width:500px;
+            padding:12px;
+            border-radius:25px;
+            border:1px solid #ccc;
+            margin-top:20px;
+            font-size:16px;
+        }
+
+        .buttons{
+            margin-top:20px;
+        }
+
+        button{
+            padding:10px 20px;
+            margin:5px;
+            border:none;
+            background:#f8f9fa;
+            cursor:pointer;
+            font-size:14px;
+        }
+
+        button:hover{
+            border:1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="logo">
+<span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+</div>
+
+<input type="text" placeholder="Search Google">
+
+<div class="buttons">
+    <button>Google Search</button>
+    <button>I'm Feeling Lucky</button>
+</div>
+
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00Dg5000004Y5O2',
+				'Github_Messaging_Setting',
+				'https://orgfarm-92834f42d3-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1772783238316',
+				{
+					scrt2URL: 'https://orgfarm-92834f42d3-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-92834f42d3-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1772783238316/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</body>
+</html>
